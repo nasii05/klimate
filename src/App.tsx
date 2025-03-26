@@ -1,9 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { Button } from "@/components/ui/button"
+import Layout from "./components/layout";
+
 
 function App() {
   return (
-    <Button variant="destructive">Subscribe</Button>
+    <BrowserRouter>
+      <Layout>
+        Hello
+      </Layout>
+    </BrowserRouter>
   )
 }
 
