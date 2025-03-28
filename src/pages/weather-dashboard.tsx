@@ -27,7 +27,9 @@ const WeatherDashboard = () => {
   const handleRefresh = () => {
     getLocation();
     if (coordinates) {
-      // reaload weather data
+      weatherQuery.refetch();
+      forecastQuery.refetch();
+      locationQuery.refetch();
     }
   }
 
