@@ -42,7 +42,7 @@ const HourlyTemperature = ({ data }: HourlyTemperatureProps) => {
                      tickFormatter={(value) => `${value}°`}
                     />
 
-                            {/* tooltip */}
+                    {/* tooltip */}
                     <Tooltip
                      content={({ active, payload }) => {
                       if (active && payload && payload.length) {
@@ -51,7 +51,7 @@ const HourlyTemperature = ({ data }: HourlyTemperatureProps) => {
                             <div className="grid grid-cols-2 gap-2">
                              <div className="flex flex-col">
                               <span className="text-[0.70rem] uppercase text-muted-foreground">
-                                  Temparature
+                                Temparature
                               </span>
                               <span className="font-bold">{payload[0].value}°</span>
                              </div>
